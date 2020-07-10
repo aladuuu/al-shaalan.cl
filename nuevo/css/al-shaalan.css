@@ -85,7 +85,9 @@ a:active {
   letter-spacing: -.05rem;
   margin-top: 1rem;
 }
-
+.nav-divider {
+  margin: 0.5rem 0; /* Space out the Bootstrap <hr> more */
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -107,4 +109,8 @@ a:active {
   .featurette-heading {
     margin-top: 2rem;
   }
+}
+
+.margen-logo {
+  margin-left: 1rem;
 }
