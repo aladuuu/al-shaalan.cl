@@ -3,6 +3,7 @@
 /* Padding below the footer and lighter body text */
 
 body {
+  padding-top: 8.7rem;
   color: #5a5a5a;
   background-color: #f8f9fa;
 }
@@ -32,7 +33,6 @@ a:active {
 /* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
-  padding-top: 2rem;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -126,4 +126,18 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 
 .gmnoprint a, .gmnoprint span, .gm-style-cc {
     display:none;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
 }
