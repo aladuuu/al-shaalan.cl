@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ==" crossorigin="anonymous" />
     <script src="https://kit.fontawesome.com/110d3aff68.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIdxyB-_3B1GX5fzRU0EtNr8-NMwbVOGo"></script>
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -122,7 +123,7 @@
         </a>
         <h2>Padrillo 1</h2>
         <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">Ver pedigree &raquo;</a></p>
+        <p><a class="btn btn-secondary" data-toggle="lightbox" href="https://al-shaalan.cl/nuevo/pedigree/1.pdf" role="button">Ver pedigree &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <a href="https://al-shaalan.cl/nuevo/video/trotando.mp4" data-toggle="lightbox" data-width="960">
@@ -145,16 +146,15 @@
     <div class="row featurette">
       <div class="col-md-7">
         <h2 class="featurette-heading"></h2>
-        <p class="lead" style="padding-top: 4rem;">
+        <p class="lead">
         	Telefono:<br><a href="tel:‭+56983604433‬">‭+(56)9 8360 4433‬</a>
         	<hr class="featurette-divider-contacto">
         	Correo:<br><a href="mailto:contacto@al-shaalan.cl">contacto@al-shaalan.cl</a>
         	<hr class="featurette-divider-contacto">
-        	Dirección:<br><a href="https://www.google.cl/maps/dir//Establo+Al-Shaalan+-+Hacienda+Chacabuco,+-+Carretera+Los+Libertadores+km.+41,+Colina,+Regi%C3%B3n+Metropolitana/@-32.9764623,-70.7789512,11z/data=!4m8!4m7!1m0!1m5!1m1!1s0x9662a4faa96822e9:0x60234353a5a9e028!2m2!1d-70.680885!2d-33.115412" target="_blank">Hacienda Chacabuco, Colina, Stgo, CL.</a>
+        	Dirección:<br><a href="https://www.google.cl/maps/dir//Establo+Al-Shaalan+-+Hacienda+Chacabuco,+-+Carretera+Los+Libertadores+km.+41,+Colina,+Regi%C3%B3n+Metropolitana" target="_blank">Hacienda Chacabuco - Carretera Los Libertadores km. 41, Colina, Santiago, Chile. <i class="fas fa-directions"></i></a>
         </p>
       </div>
-      <div class="col-md-5">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214210.27908713993!2d-70.77895124082696!3d-32.97646227255163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662a4faa96822e9%3A0x60234353a5a9e028!2sEstablo%20Al-Shaalan!5e0!3m2!1ses-419!2scl!4v1594270953937!5m2!1ses-419!2scl" width="100%" height="450px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <div class="col-md-5 gm-map map">
       </div>
     </div>
     <!-- /END THE FEATURETTES -->
@@ -173,5 +173,44 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous"></script>
 <script src="js/lightbox.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gmap3@7.2.0/dist/gmap3.min.js" integrity="sha256-Mqp5KdoH3YVf5GRwyM9HDIlUKcNmbApVGIOe0hdMXr0=" crossorigin="anonymous"></script>
+  <script>
+    $('.map')
+      .gmap3({
+        center:[-33.115412, -70.680885],
+        zoom:4,
+        mapTypeControl:false,
+        streetViewControl: false,
+        mapTypeId: "shadeOfGrey", // to select it directly
+        mapTypeControlOptions: {
+          mapTypeIds: [google.maps.MapTypeId.ROADMAP, "shadeOfGrey"]
+        }
+      })
+      .marker([
+        {position:[-33.115412, -70.680885], icon: "https://maps.google.com/mapfiles/marker_grey.png"},
+      ])
+      .on('click', function (marker) {
+        marker.setIcon('https://www.google.com/mapfiles/marker.png');
+      })
+      .styledmaptype(
+        "shadeOfGrey",
+        [
+          {"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},
+          {"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},
+          {"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},
+          {"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},
+          {"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},
+          {"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},
+          {"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},
+          {"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},
+          {"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},
+          {"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},
+          {"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},
+          {"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},
+          {"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}
+        ],
+        {name: "Shades of Grey"}
+      );      
+  </script>
 </body>
 </html>
