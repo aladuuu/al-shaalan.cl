@@ -19,6 +19,9 @@ a:hover,
 a:active {
   outline: 0;
 }
+.logo-eash {
+  height: 4rem;
+}
 .carousel {
   margin-bottom: 4rem;
 }
