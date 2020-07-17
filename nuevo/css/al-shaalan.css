@@ -19,6 +19,9 @@ a:hover,
 a:active {
   outline: 0;
 }
+:focus {
+  color: #f8f9fa !important;
+}
 .logo-eash {
   height: 4rem;
 }
@@ -51,7 +54,11 @@ a:active {
   margin-left: .75rem;
 }
 .featurette-divider {
-  margin: 5rem 0;
+  margin: 4rem 0;
+}
+.featurette-divider-top {
+  margin: 4rem 0;
+  width: 86%;
 }
 .featurette-divider-contacto {
   margin: 1rem 0;
