@@ -33,14 +33,14 @@ a:active {
   z-index: 10;
 }
 .carousel-item {
-  height: 750px;
+  height: 650px;
 }
 .carousel-item > img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 750px;
+  height: 650px;
 }
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
@@ -133,4 +133,7 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
   object-position: 50% 30%;
   width: 100%;
   height: 600px;
+}
+.go-up {
+  margin-right: 1rem;
 }
