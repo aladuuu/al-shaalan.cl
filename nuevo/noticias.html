@@ -32,6 +32,13 @@
   <script src="https://kit.fontawesome.com/110d3aff68.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
   <link href="./css/al-shaalan.css" rel="stylesheet">
+  <style>
+    iframe {
+      width: 1px;
+      min-width: 100%;
+    }
+  </style>
+  <script src="./js/iframeResizer.min.js"></script>
 </head>
 <body>
   <header>
@@ -66,39 +73,13 @@
     </nav>
   </header>
   <main role="main">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./img/carousel/1.jpg" class="galeria1">
-
-        </div>
-        <div class="carousel-item">
-          <img src="./img/carousel/2.jpg" class="galeria2">
-
-        </div>
-        <div class="carousel-item">
-          <img src="./img/carousel/3.jpg" class="galeria3">
-
-        </div>
-      </div>
-      <div id="nosotros"></div>
-    </div>
-    <div id="sobre-nosotros"></div>
     <div class="container marketing">
-      <hr class="featurette-divider">
+      <div id="noticias"></div>
+      <h2 class="featurette-heading">Noticias</h2><h3><span class="text-muted">aqui un texto</span></h3>
+      <hr class="featurette-divider-noticias">
       <div class="row">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Establos Al-Shaalan</h2><h3><span class="text-muted">Crianza de caballos arabes</span></h3>
-          <hr class="featurette-divider-sobre-nostros">
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus comm<br><br>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img src="./img/quienes-somos.jpg" class="rounded img-fluid">
+        <div class="col-md-12">
+          <iframe src="https://blog.al-shaalan.cl" id="myIframe"></iframe>
         </div>
       </div>
     </div>
@@ -116,5 +97,8 @@
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/gm.js"></script>
   <script src="js/click.js"></script>
+  <script>
+    iFrameResize({ log: true }, '#myIframe')
+  </script>
 </body>
 </html>

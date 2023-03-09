@@ -56,6 +56,18 @@ a:active {
 .featurette-divider {
   margin: 4rem 0;
 }
+.featurette-divider-padrillos {
+  margin: 4rem 0;
+}
+.featurette-divider-titulos {
+  margin-bottom: 2rem;
+}
+.featurette-divider-noticias {
+  margin-bottom: 0px;
+}
+.featurette-divider-sobre-nostros {
+  margin-bottom: 1rem;
+}
 .featurette-divider-top {
   margin: 4rem 0;
   width: 86%;
@@ -70,7 +82,7 @@ a:active {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -.05rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .nav-divider {
   margin: 0.5rem 0;
@@ -93,15 +105,12 @@ a:active {
 .margen-logo {
   margin-left: 1rem;
 }
-.gm-map {
+.mapa-google {
     display: block;
     width: 100%;
     height: 300px;
-}
-a[href^="http://maps.google.com/maps"]{display:none !important}
-a[href^="https://maps.google.com/maps"]{display:none !important}
-.gmnoprint a, .gmnoprint span, .gm-style-cc {
-    display:none;
+    border: 1px solid lightgray;
+    border-radius: 5px;
 }
 .bd-placeholder-img {
   font-size: 1.125rem;
@@ -136,4 +145,26 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 }
 .go-up {
   margin-right: 1rem;
+}
+.btn-pedigree {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: lightgrey;
+  padding: 8px 15px;
+}
+.btn-pedigree:hover {
+  background-color: grey;
+  color: lightgray;
+}
+.titulo-padrillos {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: start;
+}
+.texto-padrillos {
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+.noticias {
+  width: 100%;
 }
