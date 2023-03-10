@@ -11,16 +11,16 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="language" content="Spanish">
   <meta name="revisit-after" content="15 days">
-  <title>Establos Al-Shaalan</title>
+  <title>EASH | Noticias</title>
   <link rel="canonical" href="https://al-shaalan.cl">
-  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
-  <link rel="icon" href="./img/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./img/logo/favicon.png" type="image/x-icon">
+  <link rel="icon" href="./img/logo/favicon.png" type="image/x-icon">
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-touch-fullscreen" content="yes" />
   <meta name="apple-mobile-web-app-title" content="Establo">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#f8f9fa">
-  <link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="./img/logo/apple-touch-icon.png">
   <link href="./img/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
   <link href="./img/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
   <link href="./img/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
@@ -32,43 +32,52 @@
   <script src="https://kit.fontawesome.com/110d3aff68.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
   <link href="./css/al-shaalan.css" rel="stylesheet">
-  <style>
-    iframe {
-      width: 1px;
-      min-width: 100%;
-      border: none;
-    }
-  </style>
   <script src="./js/iframeResizer.min.js"></script>
 </head>
 <body>
   <header>
     <nav class="navbar fixed-top navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img src="./img/logo.png" class="logo-eash">
+      <a class="navbar-brand  mx-auto" href="#">
+        <img src="./img/logo/logo.png" class="logo-eash">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="text-right"><a class="fas fa-flag-usa" href="./index-en.html"></a></div>
+        <div class="text-right pagina-ingles"><a class="fas fa-flag-usa" href="#"> ENG</a></div>
         <ul class="navbar-nav mr-auto margen-logo">
           <hr class="nav-divider">
           <li class="nav-item">
             <a class="nav-link" href="./index.html#sobre-nosotros">Sobre Nosotros</a>
           </li>
+          <hr class="nav-divider">
           <li class="nav-item">
-            <a class="nav-link" href="./equipo.html">Equipo</a>
+            <a class="nav-link" href="./equipo.html">Nuestro Director</a>
           </li>
+          <hr class="nav-divider">
           <li class="nav-item">
-            <a class="nav-link" href="./padrillos.html">Padrillos</a>
+            <a class="nav-link crianza" href="#">Crianza</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contacto.html">Contacto</a>
-          </li>
+          <ul>
+            <li class="nav-item"><a href="./padrillos.html" class="nav-link">Padrillos</a></li>
+            <li class="nav-item"><a href="./madres.html" class="nav-link">Madres</a></li>
+            <li class="nav-item"><a href="./potrillos.html" class="nav-link">Potrillos</a></li>
+          </ul>
+          <hr class="nav-divider">
           <li class="nav-item">
             <a class="nav-link" href="./noticias.html">Noticias</a>
           </li>
+          <hr class="nav-divider">
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto.html">Contacto</a>
+          </li>
+          <hr class="nav-divider">
+          <div class="fondo-redes">
+            <div><a href="https://instagram.com/ealshaalan" target="_blank"><i class="fab fa-instagram-square"></i></a></div>
+            <div><a href="https://fb.com/ealshaalan" target="_blank"><i class="fab fa-facebook-square"></i></a></div>
+            <div><a href="https://twitter.com/ealshaalan" target="_blank"><i class="fab fa-twitter-square"></i></a></div>
+            <div><a href="https://alshaalanendurance.wordpress.com" target="_blank"><i class="fab fa-wordpress"></i></a></div>
+          </div>
         </ul>
       </div>
     </nav>
@@ -76,11 +85,11 @@
   <main role="main">
     <div class="container marketing">
       <div id="noticias"></div>
-      <h2 class="featurette-heading">Noticias</h2><h3><span class="text-muted">aqui un texto</span></h3>
+      <h2 class="featurette-heading">Noticias</h2><h3><span class="text-muted">Carreras, eventos y mas</span></h3>
       <hr class="featurette-divider-noticias">
       <div class="row">
         <div class="col-md-12">
-          <iframe src="https://blog.al-shaalan.cl" id="myIframe"></iframe>
+          <iframe src="https://blog.al-shaalan.cl" id="myIframe" class="iframe-noticias"></iframe>
         </div>
       </div>
     </div>
@@ -95,11 +104,7 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/gmap3@7.2.0/dist/gmap3.min.js" integrity="sha256-Mqp5KdoH3YVf5GRwyM9HDIlUKcNmbApVGIOe0hdMXr0=" crossorigin="anonymous"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/gm.js"></script>
-  <script src="js/click.js"></script>
-  <script>
-    iFrameResize({ log: true }, '#myIframe')
-  </script>
+  <script src="./js/jquery.fancybox.min.js"></script>
+  <script src="./js/iframe.js"></script>
 </body>
 </html>
