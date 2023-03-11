@@ -73,6 +73,9 @@ a:active {
   line-height: 1;
   letter-spacing: -.05rem;
 }
+.margen-noticias {
+  margin-bottom: 15px;
+}
 .nav-divider {
   margin: 0.5rem 0;
 }
@@ -225,10 +228,11 @@ a:active {
 }
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 45px;
+    font-size: 35px;
     line-height: 45px;
   }
   #hero h2 {
+    font-size: 15px;
     line-height: 22px;
   }
 }
@@ -264,8 +268,17 @@ a:active {
   }
 }
 .rojo {
-  color: red;
+  color: #ff0000;
 }
 .carousel-ppg {
   margin-top: 2rem;
+}
+.borde-tabla {
+  margin-top: 15px;
+  border: 1px solid lightgray;
+}
+@media (min-width: 992px) {
+  .no-featurette hr {
+    display: none;
+  }
 }
