@@ -5,6 +5,7 @@ body {
 }
 ul {
   list-style-type: disc;
+  color: #898989;
 }
 a {
   color: #000000;
@@ -22,14 +23,12 @@ a:hover,
 a:active {
   outline: 0;
 }
-:focus {
-  color: #f8f9fa !important;
-}
 .logo-eash {
   height: 2rem;
 }
 .marketing {
   margin-top: 4rem;
+  margin-bottom: 0;
 }
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
@@ -148,19 +147,24 @@ a:active {
   margin-bottom: 10px;
   text-align: start;
 }
-.texto-padrillos {
-  margin-bottom: 50px;
-  margin-top: 30px;
+.video-padrillos {
+  font-size: xx-small;
+  text-align: center;
 }
 .noticias {
   width: 100%;
 }
 .fondo-redes {
-  background-color: rgb(235, 235, 235);
-  border-radius: 5px;
+  background-color: rgb(238, 238, 238);
+  border-radius: 3px;
   display: flex;
   justify-content: center;
   gap: 2rem;
+}
+.footer-redes {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
 }
 /*--------------------------------------------------------------
 # Hero Section
@@ -170,11 +174,12 @@ a:active {
   height: 100vh;
   background: url("../img/varias/fondo.jpg");
   position: relative;
+  background-repeat: no-repeat;
 }
 #hero .hero-container {
   position: absolute;
   bottom: 0;
-  top: 0;
+  top: 30vh;
   left: 0;
   right: 0;
   display: flex;
@@ -240,7 +245,8 @@ a:active {
   border: transparent;
 }
 .pagina-ingles a {
-  color: rgb(74, 73, 73);
+  color: #989898;
+  font-size: small;
 }
 .text-muted {
   font-family: 'Libre Baskerville', serif;
@@ -273,12 +279,32 @@ a:active {
 .carousel-ppg {
   margin-top: 2rem;
 }
-.borde-tabla {
+.tabla-padrillos {
   margin-top: 15px;
   border: 1px solid lightgray;
+  font-size: x-small;
 }
 @media (min-width: 992px) {
   .no-featurette hr {
     display: none;
   }
+}
+.navbar-toggler {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+}
+.navbar-toggler>.close {
+  display:inherit;
+}
+.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+  display:none;
+}
+.navbar-toggler:focus {
+  outline: 0;
+}
+.cerrar-navbar {
+  font-size: 25px;
+  margin-right: 10px;
+  color: #5a5a5a;
 }

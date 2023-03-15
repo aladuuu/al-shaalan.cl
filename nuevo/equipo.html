@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="title" content="Establos Al-Shaalan">
+  <meta name="title" content="Al-Shaalan Endurance">
   <meta name="description" content="Crianza de caballos Arabes">
   <meta name="keywords" content="chile, santiago, cl, stgo, caballo, arabe, carrera, enduro, endurance, arabia, jordania, race, jordan, arab, horse">
   <meta name="robots" content="index, follow">
@@ -30,18 +30,18 @@
   <link href="./img/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" /> 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/110d3aff68.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
   <link href="./css/al-shaalan.css" rel="stylesheet">
 </head>
 <body>
   <header>
     <nav class="navbar fixed-top navbar-light bg-light">
-      <a class="navbar-brand  mx-auto" href="#">
+      <a class="navbar-brand mx-auto" href="index.html">
         <img src="./img/logo/logo.png" class="logo-eash">
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
+      <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="close cerrar-navbar">x</span>
+        <span class="navbar-toggler-icon"></span>
+     </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="text-right pagina-ingles"><a class="fas fa-flag-usa" href="#"> ENG</a></div>
         <ul class="navbar-nav mr-auto margen-logo">
@@ -83,14 +83,13 @@
   </header>
   <main role="main">
     <div class="container marketing">
-      <div id="equipo"></div>
       <h2 class="featurette-heading">Nuestro Director</h2><h3><span class="text-muted">Pedro Pablo Gómez Martínez</span></h3>
       <hr class="featurette-divider-titulos">
       <div class="row justify-content-center">
         <div class="col-md-4 col-6">
           <img src="./img/equipo/ppg1.jpg" class="rounded-circle img-thumbnail ppg">
         </div>
-        <div class="col-md-8 col-10 descripcion-ppg">
+        <div class="col-md-8 col-12 descripcion-ppg">
           <p class="lead">Preocupado de cada detalle nada pasa dentro del desarrollo de sus caballos sin estar visado por él , desde la elección de los padrillos y madres, la crianza de los potrillos y hasta el último detalle en competencias nacionales e internacionales de Endurance donde participan el esta involcurado.<br><br>Su larga trayectoria de mas de 30 años en el rubro como tambien sus multiples logros en competencias nacionales e internacionales lo hace una persona reconocida, respetada y muy valorada a nivel mundial.<br><br>En su vida se destacan largas estadías en el Medio Oriente y Estados Unidos , donde a podido nutrirse de conocimiento para desarrollar su pasión: Los caballos de Endurance.</p>
         </div>
         <div class="col-12">
@@ -115,15 +114,19 @@
     </div>
     <footer class="container">
       <hr class="featurette-divider-footer">
-      <p><a href="https://instagram.com/ealshaalan" target="_blank"><i class="fab fa-instagram-square"></i></a> | <a href="https://fb.com/ealshaalan" target="_blank"><i class="fab fa-facebook-square"></i></a> | <a href="https://twitter.com/ealshaalan" target="_blank"><i class="fab fa-twitter-square"></i></a> | <a href="https://alshaalanendurance.wordpress.com" target="_blank"><i class="fab fa-wordpress"></i></a></p>
+      <div class="footer-redes">
+        <div><a href="https://instagram.com/ealshaalan" target="_blank"><i class="fab fa-instagram-square"></i></a></div>
+        <div><a href="https://fb.com/ealshaalan" target="_blank"><i class="fab fa-facebook-square"></i></a></div>
+        <div><a href="https://twitter.com/ealshaalan" target="_blank"><i class="fab fa-twitter-square"></i></a></div>
+        <div><a href="https://alshaalanendurance.wordpress.com" target="_blank"><i class="fab fa-wordpress"></i></a></div>
+      </div>
       <p class="float-right go-up"><a href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></p>
-      <p><a href="https://www.al-shaalan.cl" target="_blank">&copy; 2023 Establos Al-Shaalan Ltda.</a></p>
+      <p><a href="https://www.al-shaalan.cl" target="_blank">&copy; <span id="currentYear"></span> Establos Al-Shaalan Ltda.</a></p>
     </footer>
   </main>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gmap3@7.2.0/dist/gmap3.min.js" integrity="sha256-Mqp5KdoH3YVf5GRwyM9HDIlUKcNmbApVGIOe0hdMXr0=" crossorigin="anonymous"></script>
-  <script src="./js/jquery.fancybox.min.js"></script>
+  <script src="./js/year.js"></script>
 </body>
 </html>
