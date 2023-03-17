@@ -305,3 +305,6 @@ a:active {
   margin-right: 10px;
   color: #5a5a5a;
 }
+.fancybox__caption a{
+ color: #ffffff;
+}
