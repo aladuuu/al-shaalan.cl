@@ -305,9 +305,25 @@ a:active {
   margin-right: 10px;
   color: #5a5a5a;
 }
-.fancybox__caption a{
- color: #ffffff;
+.fancybox__caption {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
+.fancybox__caption a{
+ color: lightgray;
+ font-size: small;
+ border: 1px solid lightgray;
+ border-radius: 5px;
+ padding: 8px 10px;
+}
+.fancybox__caption a:hover {
+  color: black;
+  background-color: lightgray;
+  border: 1px solid darkgray;
+ }
 #current-image { 
   width: 100%;
   border-radius: .25rem;
