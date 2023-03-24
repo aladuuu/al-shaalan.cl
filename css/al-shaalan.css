@@ -115,36 +115,20 @@ a:active {
     font-size: 3.5rem;
   }
 }
-.galeria1 {
-  object-fit: cover;
-  object-position: 50% 50%;
-  width: 100%;
-  height: 600px;
-}
-.galeria2 {
-  object-fit: cover;
-  object-position: 50% 45%;
-  width: 100%;
-  height: 600px;
-}
-.galeria3 {
-  object-fit: cover;
-  object-position: 50% 30%;
-  width: 100%;
-  height: 600px;
-}
 .go-up {
   margin-right: 1rem;
 }
 .btn-pedigree {
-  border: 1px solid transparent;
   border-radius: 5px;
-  background-color: lightgrey;
+  color: whitesmoke;
+  background-color: #6c757d;
   padding: 10px 100px;
+  border: 1px solid whitesmoke;
 }
 .btn-pedigree:hover {
-  background-color: grey;
-  color: lightgray;
+  background-color: whitesmoke;
+  color: #6c757d;
+  border: 1px solid #6c757d;
 }
 .titulo-padrillos {
   margin-top: 10px;
