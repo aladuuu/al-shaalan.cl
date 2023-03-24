@@ -3,6 +3,9 @@ body {
   color: #5a5a5a;
   background-color: #f8f9fa;
 }
+p {
+  margin-bottom: 0;
+}
 ul {
   list-style-type: disc;
   color: #898989;
@@ -45,7 +48,7 @@ a:active {
   margin: 4rem 0;
 }
 .featurette-divider-padrillos {
-  margin: 4rem 0;
+  margin: 3.5rem 0 0 0;
 }
 .featurette-divider-titulos {
   margin-bottom: 2rem;
@@ -64,7 +67,7 @@ a:active {
   margin: 1rem 0;
 }
 .featurette-divider-footer {
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 .featurette-heading {
   font-family: 'Libre Baskerville', serif;
@@ -275,8 +278,13 @@ a:active {
   border: 1px solid lightgray;
   font-size: x-small;
 }
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .no-featurette hr {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .no-featurette-rev hr {
     display: none;
   }
 }
@@ -333,4 +341,16 @@ a:active {
   cursor: pointer;
   margin-top: 10px;
   border-radius: .25rem;
+}
+.margen-abajo {
+  margin-bottom: 2rem;
+}
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 992px) {
+  .margen-abajo-query {
+    margin-bottom: 2rem;
+  }
 }
