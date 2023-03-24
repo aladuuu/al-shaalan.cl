@@ -256,11 +256,6 @@ a:active {
   min-width: 100%;
   border: none;
 }
-.ppg {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 @media (max-width: 768px) {
   .descripcion-ppg {
     margin-top: 2rem;
