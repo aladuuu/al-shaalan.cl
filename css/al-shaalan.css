@@ -125,6 +125,8 @@ a:active {
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: start;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 25px;
 }
 .video-padrillos {
   font-size: small;
