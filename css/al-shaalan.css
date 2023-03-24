@@ -44,25 +44,13 @@ a:active {
   margin-right: .75rem;
   margin-left: .75rem;
 }
-.featurette-divider {
-  margin: 4rem 0;
-}
 .featurette-divider-padrillos {
   margin: 3.5rem 0 0 0;
 }
 .featurette-divider-titulos {
   margin-bottom: 2rem;
 }
-.featurette-divider-noticias {
-  margin-bottom: 0px;
-}
-.featurette-divider-sobre-nostros {
-  margin-bottom: 1rem;
-}
-.featurette-divider-top {
-  margin: 4rem 0;
-  width: 86%;
-}
+
 .featurette-divider-contacto {
   margin: 1rem 0;
 }
@@ -256,16 +244,8 @@ a:active {
   min-width: 100%;
   border: none;
 }
-@media (max-width: 768px) {
-  .descripcion-ppg {
-    margin-top: 2rem;
-  }
-}
 .rojo {
   color: #ff0000;
-}
-.carousel-ppg {
-  margin-top: 2rem;
 }
 .tabla-padrillos {
   margin-top: 15px;
