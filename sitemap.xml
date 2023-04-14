@@ -4,46 +4,42 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
 <url>
   <loc>https://al-shaalan.cl/</loc>
-  <lastmod>2023-03-24T07:00:10+00:00</lastmod>
+  <lastmod>2023-04-14T11:58:09+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://al-shaalan.cl/index.html</loc>
-  <lastmod>2023-03-24T07:00:10+00:00</lastmod>
+  <lastmod>2023-04-14T11:58:09+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://al-shaalan.cl/equipo.html</loc>
-  <lastmod>2023-03-24T07:00:10+00:00</lastmod>
+  <lastmod>2023-04-14T11:58:09+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://al-shaalan.cl/padrillos.html</loc>
-  <lastmod>2023-03-24T07:00:10+00:00</lastmod>
+  <lastmod>2023-04-14T11:58:09+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://al-shaalan.cl/madres.html</loc>
-  <lastmod>2023-03-24T07:00:10+00:00</lastmod>
+  <lastmod>2023-04-14T11:58:09+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://al-shaalan.cl/potrillos.html</loc>
-  <lastmod>2023-03-24T07:00:10+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://al-shaalan.cl/noticias.html</loc>
-  <lastmod>2023-03-24T07:00:10+00:00</lastmod>
+  <lastmod>2023-04-14T11:58:09+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://al-shaalan.cl/contacto.html</loc>
-  <lastmod>2023-03-24T07:00:10+00:00</lastmod>
+  <lastmod>2023-04-14T11:58:09+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
